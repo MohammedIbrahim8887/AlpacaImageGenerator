@@ -1,0 +1,105 @@
+* {
+    font-family: "Poppins", "Inter", "Open Sans", sans-serif;
+    margin-left: 10px;
+}
+
+.titleHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.leftSide .imageContainer img {
+    width: fit-content;
+    height: 30rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.accessoriesHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap-reverse;
+    max-width: 80%;
+}
+
+.accessoriesHolder div {
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.btn {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    flex: 1 1 auto;
+    width: 8rem;
+    border-radius: 45px;
+    border: 0.1rem solid;
+    border-color: #265bff;
+}
+
+.btn p {
+    margin: 0;
+    padding: 0;
+}
+
+#alpacaStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#alpacaStyle div {
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.holder div {
+    flex-direction: row;
+    flex: 1 1 auto;
+}
