@@ -1,6 +1,6 @@
 * {
     font-family: "Poppins", "Inter", "Open Sans", sans-serif;
-    margin-left: 10px;
+    margin-left: 2rem;
 }
 
 .titleHolder {
@@ -12,7 +12,7 @@
 
 .contentHolder {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 2rem;
 }
@@ -20,9 +20,22 @@
 .leftSide {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
+    max-width:50%;
+    height:50%;
+}
+
+.imageContainer{
+    position: absolute;
+    top:8em;
+    left:2rem;
+    bottom:2rem;
+}
+
+.imageContainer img{
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .leftSide .imageContainer img {
@@ -30,13 +43,37 @@
     height: 30rem;
 }
 
+.leftSide .imageContainer #eyesImage{
+    z-index: 2;
+}
+
+.leftSide .imageContainer #mouthImage{
+    z-index: 1;
+}
+
+.leftSide .imageContainer #accessoriesImage{
+    z-index: 2;
+}
+
+.leftSide .imageContainer #hairImage{
+    z-index: 1;
+}
+
 .buttonContainer {
+    position: absolute;
+    top: 40rem;
+    left: 7rem;
     display: flex;
     flex-direction: row;
+
+}
+
+.buttonContainer div{
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
+
 
 .rightSide {
     display: flex;
@@ -44,6 +81,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    max-width:50%;
 }
 
 .accessoriesHolder {
