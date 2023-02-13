@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpaca Image Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -15,16 +16,16 @@
     </div>
     <div class="contentHolder">
         <div class="leftSide">
-            <div class="imageContainer">
-                <img src="alpaca/backgrounds/blue50.png" id="backgroundsImage"  alt="backgrounds"/>
-                <img src="alpaca/accessories/earings.png" id="accessoriesImage" alt="accessories"/>
-                <img src="alpaca/eyes/default.png" id="eyesImage" alt="eyes"/>
-                <img src="alpaca/ears/default.png" id="earsImage" alt="ears"/>
-                <img src="alpaca/hair/bang.png" id="hairImage" alt="hair"/>
-                <img src="alpaca/leg/bubble-tea.png" id="legImage" alt="leg"/>
-                <img src="alpaca/mouth/default.png" id="mouthImage" alt="mouth"/>
-                <img src="alpaca/neck/default.png" id="neckImage" alt="neck"/>
-                <img src="alpaca/nose.png" id="noseImage" alt="nose"/>
+            <div class="imageContainer" id="imageContainer">
+                <img src="alpaca/backgrounds/blue50.png" id="backgroundsImage" class="img" alt="backgrounds"/>
+                <img src="alpaca/accessories/earings.png" id="accessoriesImage" class="img" alt="accessories"/>
+                <img src="alpaca/eyes/default.png" id="eyesImage" class="img" alt="eyes"/>
+                <img src="alpaca/ears/default.png" id="earsImage" class="img" alt="ears"/>
+                <img src="alpaca/hair/bang.png" id="hairImage" class="img" alt="hair"/>
+                <img src="alpaca/leg/bubble-tea.png" id="legImage" class="img" alt="leg"/>
+                <img src="alpaca/mouth/default.png" id="mouthImage" class="img" alt="mouth"/>
+                <img src="alpaca/neck/default.png" id="neckImage" class="img" alt="neck"/>
+                <img src="alpaca/nose.png" id="noseImage" class="img" alt="nose"/>
             </div>
             <div class="buttonContainer">
                 <div class="btn" id="random">
@@ -72,6 +73,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+
 </body>
 
 </html>

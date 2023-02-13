@@ -1057,3 +1057,15 @@ leg.addEventListener("click", (e) => {
         return;
     }
 });
+
+/*Download Event*/
+download.addEventListener("click",(e) =>{
+    const img = document.getElementsByClassName("img");
+    html2canvas(img).then(canvas => {
+        const image = canvas.toDataURL("image/png");
+        const link = document.createElement("a");
+        link.href = image;
+        link.download = "image.png";
+        link.click();
+    });
+});
